@@ -1,0 +1,508 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+:root{
+    --primary-color: #0F1B4C;
+}
+
+/* Common */
+.content{
+    width: 1110px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header */
+.header{
+    background-color: #E6F0FF;
+    height: 100vh;
+    position: relative;
+}
+
+.btn{
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    min-width: 98px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar ul{
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar ul a{
+    color: #4F5361;
+    font-size: 1.4rem;
+    line-height: normal;
+    text-decoration: none;
+    padding: 8px 14px;
+}
+
+.navbar ul a:hover{
+    text-decoration: underline;
+}
+
+.navbar .action{
+    margin-left: auto;
+}
+
+.navbar .action-link{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.navbar .action-btn{
+    padding: 10px 16px;
+}
+
+.hero{
+    margin-top: 130px;
+}
+
+.hero .info{
+    width: 51%;
+}
+
+.hero .sub-title{
+    color: #687690;
+    font-size: 1.8rem;
+}
+
+.hero .title{
+    color: #000336;
+    font-size: 6.4rem;
+    line-height: 76px; /* 118.75% */
+    margin-top: 8px;
+}
+
+.hero .desc{
+    color: #5A6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.hero .hero-img{
+    position: absolute;
+    bottom: 0px;
+    right: 65px;
+}
+
+.cilents{
+    margin-top: 80px;
+}
+
+.cilents .fback{
+    margin: 42px 165px;
+}
+
+.cilents .logo-1{
+    display: flex;
+    justify-content: space-between;
+}
+.cilents .desc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+.cilents .logo-2 li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.guides{
+    margin-top: 40px;
+}
+
+.guides .services{
+    margin: 80px 380px;
+}
+
+.guides .title{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 35px; /* 100% */
+    margin-top: 10px;
+}
+
+.guides .sub-title{
+    color: #5A6473;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    width: 460px;
+    height: 60px;
+    margin: 20px auto 70px auto;
+}
+
+.guides .list-guild{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.guides .h3{
+    color: #3B3C45;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 22px; /* 110% */
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+.guides .how{
+    color: #0689FF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.guides .SFG{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.features{
+    background: #F5FAFE;
+    margin-top: 120px;
+    height: 100vh;
+}
+
+.features .content{
+    display: inline-block;
+    margin: 110px 165px;
+}
+
+.features .title{
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    line-height: 35px; /* 100% */
+}
+
+.features .sub-title .desc{
+    color: #5A6473;
+    font-size: 1.6rem;
+    line-height: 30px; /* 187.5% */
+}
+
+.features .sub-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.features .desc-link{
+    color: #0689FF;
+    font-size: 1.8rem;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+}
+
+.features .list{
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+}
+
+.features .thumb{
+    width: 100%;
+    width: 350px;
+    height: 227px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.features .item{
+    background-color: #FFF;
+    border-radius: 12px;
+}
+
+.features .body{
+    padding: 20px 17px 38px 24px;
+}
+
+.features .body .title{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 20px; /* 100% */
+}
+
+.features .body .desc{
+    color: #A3A6AB;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.features .info{
+    display: inline-block;
+    align-items: center;
+}
+.features .body .lable{
+    color: #4D4D52;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; /* 100% */
+    letter-spacing: 0.14px;
+    margin-left: 8px;
+}
+
+.features .body .icon{
+    margin-left: 23px;
+}
+.features .body .icon:first-child{
+    margin-left: 0px;
+}
+
+.features-2{
+    margin-top: 75px;
+    height: 100vh;
+}
+
+.features-2 .content{  
+    margin: 50px 227px;
+}
+
+.features-2 .benefit{
+    display: flex;
+    margin-bottom: 110px;
+}
+
+.features-2 .thumb{
+    position: relative;
+    width: 50%;
+}
+
+.features-2 .thumb img{
+    width: 100%;
+}
+
+.features-2 .thumb .image{
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    border-radius: 12px;
+}
+
+.features-2 .thumb .card{
+    width: 239px;
+    height: 252px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
+.features-2 .desc{
+    margin-left: 165px;
+    margin-top: 65px;
+}
+
+.features-2 .title{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px; /* 128.571% */
+    width: 269px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.features-2 .sub-title{
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    width: 309px;
+}
+
+.features-2 .list{
+    display: flex;
+    margin-top: 200px;
+}
+
+.features-2 .item{
+    margin-left: 220px;
+}
+.features-2 .item:first-child{
+    margin-left: 0px;
+}
+
+.features-2 .amount{
+    color: #000;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 100% */
+}
+
+.features-2 .exp{
+    color: #7B8087;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 22px;
+}
+
+.subcribe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.subcribe .body{
+    display: flex;
+    width: 1110px;
+    height: 350px;
+    background-color: #063183;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.subcribe .info{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 120px;
+    margin-right: 90px;
+}
+
+.subcribe .title{
+    color: #FFF;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px; /* 100% */
+}
+
+.subcribe .sub-title{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.subcribe .btn{
+    background-color: #FFF;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.subcribe .iphone{
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 230px;
+}
+
+.footer{
+    margin-top: 55px;
+}
+
+.footer .list{
+    display: flex;
+    margin: 100px 165px;
+}
+
+.footer .item{
+    margin-left: 200px;
+}
+.footer .item:first-child{
+    margin-left: 0px;
+}
+
+.footer .title{
+    color: #1C1C1D;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 42px;
+}
+
+.footer .sub-title{
+    color: #7A7A7E;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.footer .sub-title:last-child{
+    margin-bottom: 0px;
+}
+
+.footer .logo{
+margin-top: 81px;
+}
